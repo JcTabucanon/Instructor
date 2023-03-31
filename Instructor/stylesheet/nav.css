@@ -1,0 +1,68 @@
+.topNav{
+     width: 100%;
+     height: 50px;
+     position: fixed;
+     background-color: #1f2937;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-bottom: 0.01em solid #2f353f;
+}
+.topIcon_wrapper{
+     display: flex;
+     flex-direction: row;
+     height: 100%;
+     width: auto;
+}
+.search{
+     height: 100%;
+          display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: row;
+}
+.search svg{
+     color: white;
+     width: 25px;
+     height: 25px;
+}
+.search input{
+     margin-left: 10px;
+     outline: none !important;
+     background-color: #111827;
+     border: none;
+     width: 250px;
+     height: 30px;
+     border-radius: 5px;
+     padding: 10px;
+     color: white;
+     font-size: 15px;
+}
+.topIcon_can{
+     width: 50px;
+     height: 50px;
+     margin-left: 5px;
+}
+.topIcon{
+     height: 50px;
+     width: 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.topIcon svg{
+     width: 25px;
+     height: 25px;
+     color: white;
+}
+.topIcon svg:hover{
+     transition: .03s ease-in-out;
+     background-color: #111827;
+     padding: 8px;
+     border-radius: 5px;
+}
+.active svg{
+     background-color: #111827 !important;
+     padding: 8px;
+     border-radius: 5px;
+}

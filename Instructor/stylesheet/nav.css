@@ -1,3 +1,13 @@
+*{
+     margin: 0;
+     padding: 0;
+     font-family: Arial, Helvetica, sans-serif;
+}
+body{
+     width: 100%;
+     min-height: 100vh;
+     background-color: #111827;
+}
 .topNav{
      width: 100%;
      height: 50px;
@@ -16,7 +26,7 @@
 }
 .search{
      height: 100%;
-          display: flex;
+     display: flex; 
      justify-content: center;
      align-items: center;
      flex-direction: row;
@@ -66,3 +76,26 @@
      padding: 8px;
      border-radius: 5px;
 }
+
+/* this for hover info */
+
+.homeIcon::after {
+     content: attr(title);
+     position: absolute;
+     bottom: -20px; /* Adjust the tooltip position */
+     left: 50%;
+     transform: translateX(-50%);
+     background-color: #000;
+     color: #fff;
+     padding: 5px;
+     font-size: 14px;
+     white-space: nowrap;
+     opacity: 0;
+     pointer-events: none;
+     transition: opacity 0.3s ease-in;
+   }
+   
+   /* Show the tooltip on hover */
+   .homeIcon:hover::after {
+     opacity: 1;
+   }

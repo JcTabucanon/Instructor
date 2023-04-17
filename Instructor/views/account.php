@@ -1,15 +1,15 @@
 <?php 
-     require_once '../include/updateAccount.inc.php';
+     require_once '../include/instructor/updateAccount.inc.php';
      require_once '../dbConnection/db.php';
-     $id=1;
-        $sql="Select * from instructors where id=$id";
+     $user = $_SESSION['current_user'];
+
+        $sql="Select * from instructors where username = '$user'";
         $result=mysqli_query($conn, $sql);
-        
         if ($result === false) {
         die(mysqli_error($conn));
         }
         $row = mysqli_fetch_assoc($result);
-            $FIRSTNAME=$row['FIRSTNAME'];
+            $FIRSTNAME=$row['FIRSTNAME'];    
             $MI=$row['MI'];
             $LASTNAME=$row['LASTNAME'];
             $USERNAME=$row['USERNAME'];
@@ -17,8 +17,6 @@
             $GENDER=$row['GENDER'];
             $JOB_TITLE=$row['JOB_TITLE'];
             $ADDRESS=$row['ADDRESS'];
-
-
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +26,8 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../stylesheet/acc.css">
-     <link rel="stylesheet" href="../modal/stylesheet/updateAccount.css">
+     <link rel="stylesheet" href="../modal/stylesheet/update_accountMod.css">
+     <link rel="stylesheet" href="../modal/stylesheet/delete_accountModal.css">
      <title>Account</title>
 </head>
 <body>
@@ -97,9 +96,6 @@
                                              <label class="details name"><?php echo $LASTNAME   ;?></label>
                                         </div>
                                         <div class="info_con">
-                                             <label class="details"><?php echo $LASTNAME   ;?></label>
-                                        </div>
-                                        <div class="info_con">
                                              <label class="details"><?php echo $AGE   ;?></label>
                                         </div>
                                         <div class="info_con">
@@ -113,9 +109,11 @@
                                         </div>
                                    </div> 
                                    <div class="acc_btn">
-                                        <button id="openModal">Edit Account</button>
-                                        <?php include_once '../modal/html/updateAccount.php'; ?>
-                                        <button id="openModal">Delete accoount</button>
+                                        <button id="openModal_edit" class="acc_btn_edit">Edit Account</button>
+                                        <?php include_once '../modal/html/update_popup.php'; ?>
+                                        <button id="openModal_delete" class="acc_btn_delete">Delete accoount</button>
+                                        <?php include_once '../modal/html/delete_popup.php'; ?>
+
                                    </div>         
                               </div>    
                               
@@ -129,15 +127,6 @@
                </div>
           </div>
      </div>
-     <div class="footer">
-          <div class="upper">
-               <p>UPPER</p>
-          </div>
-          <div class="lower">
-               <p>© 2023 Programm by: Wendel Luche and Jessie Cuna. All rights reserved.</p>
-          </div>
-     </div>
-
-</body>
-</html>
-<script src="../modal/javascript/updateAccount.js"></script>
+<?php require_once '../templates/footer.php';?>
+<script src="../modal/javascript/update_account_modal.js"></script>
+<script src="../modal/javascript/delete_account_modal.js"></script>

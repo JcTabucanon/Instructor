@@ -1,0 +1,28 @@
+.footer{
+     height: fit-content !important;
+     width: 100% !important;
+     background-color: #f9faf9 !important;
+     color: #9c9d9c !important;
+     background-color: #111827 !important;
+     display: flex !important;
+     flex-direction: column !important;
+}
+.upper{
+     border-top: 0.01em solid #1f2937 !important;
+
+     height: 50px !important;
+     width: 100% !important;
+     color:#9c9d9c !important;
+     display: flex !important;
+     justify-content: center !important;
+     align-items: center !important;
+}  
+.lower{
+     height: 50px !important;
+     width: 100% !important;
+     color:#9c9d9c !important;
+     display: flex !important;
+     justify-content: center !important;
+     align-items: center !important;
+     font-size: 12px !important;
+} 

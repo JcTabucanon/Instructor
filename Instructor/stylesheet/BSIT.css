@@ -1,0 +1,45 @@
+*, a{
+     text-decoration: none;
+   }
+   body{
+     font-family:"arial";
+     text-align: center;
+     background-color: white;
+   }
+   .container{
+     border: 3px solid black;
+     margin-top: 50px;
+     padding-top: 20px;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-bottom: 30px;
+     background-color: white;
+     border-radius: 20px;
+   }
+   thead{
+     background-color: green;
+     color: white;
+   }
+   .clm{
+     background-color: darkcyan;
+   }
+   th, td{
+     border: 1px solid black;
+   }
+   th{
+     text-align: center;
+   }
+   #btn{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     text-align: left;
+   }
+   #b1{
+     margin-right: 5px;
+   }
+   #b2{
+     margin-left: 5px;
+   }
+   #btn, a{
+     text-decoration: none;
+   }

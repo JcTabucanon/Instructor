@@ -1,0 +1,215 @@
+body{
+     width: 100%;
+     min-height: 100vh;
+     background-color: #111827;
+}
+.import{
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+.move{
+     margin-top: 80px;
+     width: 60%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     padding: 10px;
+}
+.imp-con{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     margin-top: 10px;
+}
+.line{
+     border-bottom: 0.01em solid #1f2937 !important;
+     padding-bottom: 35px;
+
+}
+.line form{
+     border: 0.01em solid #1f2937 !important;
+     padding: 10px;
+     background-color: #111722;
+     border-radius: 5px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+
+}
+.imp-btn{
+     background-color: goldenrod;
+     outline: none;
+     border: 0.01rem solid goldenrod;
+     padding: 5px;
+     color: black;
+     border-radius: 4px;
+     cursor: pointer;
+     letter-spacing: .5px;
+     font-size: 16px;
+}
+.imp-btn:hover{
+     transition: 0.3s ease;
+     background-color: goldenrod;
+     color: black;
+     border-color: #111722;
+}
+.line label{
+     font-size: 17px;
+     padding: 5px;
+     letter-spacing: .5px;
+     color: goldenrod; 
+}
+.imp-con h1{
+     color: #4e5d77;
+     padding: 5px;
+     font-size: 25px;
+}
+.imp-excel{
+     font-size: 16px;
+     padding: 5px;
+     background-color: #111722;
+     color: goldenrod;
+     margin-right: 10px;
+     cursor: pointer;
+     text-decoration: underline;
+     width: fit-content;
+}
+.select-instructor-con{
+     display: flex;
+     flex-direction: column;
+}
+.imp-manual-txt{
+     color: #4e5d77;
+     margin-top: 20px;
+     font-size: 25px;
+}
+.select-instructor-con label{
+     color: goldenrod;
+     padding: 10px;
+     font-size: 17px;
+}
+.select-instructor{
+     display: flex;
+     flex-direction: row;
+     padding: 5px;
+}
+.txt-select-ins{
+     width: 55% !important;
+     padding: 5px;
+     height: 30px !important;
+     border-radius: 5px;
+     color: goldenrod;
+     font-size: 17px;
+     background-color: #111722;
+     border: 0.01rem solid #1f2937;
+     text-align: center;
+}
+.open_modal{
+     width: 150px;
+     background-color: goldenrod;
+     /* outline: 0.01rem solid goldenrod; */
+     border: none;
+     color: #fff;
+     padding: 5px;
+     border-radius: 5px;
+     height: 39px;
+     margin-left: 10px;
+     font-size: 17px;
+     cursor: pointer;
+}
+.open_modal:hover{
+     transition: 0.03s ease;
+     background-color: rgb(196, 121, 24);
+     outline: none;
+     color: #fff;
+}
+.imp-manual{
+     display: flex;
+     flex-direction: column;
+     color: #fff;
+     border: 0.01;
+     width: 100%;
+     align-items: center;
+     border: 0.01rem solid #1f2937;
+     border-radius: 7px;
+}
+.imp-manual input{
+     border: none;
+     height: 30px;
+     background-color: #111722 ;
+     border-bottom: 0.01rem solid #1f2937;
+     margin-top: 5px;
+     margin-bottom: 5px;
+     outline: none !important;
+     padding: 5px;
+     cursor: pointer;
+     font-size: 17px;
+     color: #fff;
+     padding-left: 10px;
+     width: 90%;
+}
+.imp-manual input:hover,
+.imp-manual input:focus
+{
+     border-color: goldenrod;
+}
+.imp-manual label{
+     padding: 5px;
+     text-align: left;
+     width: 90%;
+     margin-top: 5px;
+     color: goldenrod;
+}
+#imp-btn-manual{
+     width: 50% !important;
+     padding: 5px;
+     background-color: goldenrod;
+     height: 40px;
+     margin: 20px;
+     border-radius: 7px;
+     border: none;
+     margin-bottom: 50px;
+}
+.sem{
+     display: flex;
+     flex-direction: row;
+     width: 90%;
+     background-color: #111722;
+     padding: 5px;
+     justify-content: left;
+     align-items: center;
+}
+.sem input,
+.sem label{
+     width: fit-content;
+}
+.sem label{
+     padding-left: 20px;
+}
+.sem input{
+     background-color: #111722;
+     height: 15px;
+     width: 15px;
+}
+
+.btn-select-ins{
+     width: 12% !important;
+     height: 40px !important;
+     background-color: #1f2937 !important;
+     border-radius: 5px;
+     margin-left: 1%;
+}
+.btn-select-ins:hover{
+     width: 12% !important;
+     height: 40px !important;
+     background-color: goldenrod !important;
+     border-radius: 5px;
+     margin-left: 1%;
+}
+.hide{
+     display: none;
+     color: white;
+}

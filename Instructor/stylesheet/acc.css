@@ -9,7 +9,7 @@ body{
      background-color: #111827;
 }
 .info_wrapper{
-     width: 100vw;
+     width: 100%;
      height: auto;
      display: flex;
      justify-content: center;
@@ -86,7 +86,7 @@ body{
      background-color: #111827;
 }
 .active_btn{
-     background-color: #111827;
+     background-color: #111722;
 }
 .btn_icon{
      margin-left: 30%;
@@ -169,7 +169,6 @@ body{
      font-size: 30px;
      font-style: italic;
      letter-spacing: 1px;
-     opacity: .9;
 }
 .name{
      font-style: italic;
@@ -177,23 +176,41 @@ body{
      font-size: 17px;
 }
 .acc_btn{
-     margin-top: 10px;
+     margin-top: 10px;   
      padding-top: 10px;
      height: 200px;
      border-top: 0.01rem solid #9c9d9c;
      width: 90%;
      display: flex;
      flex-direction: row;
-     justify-content: right;  
+     justify-content: right; 
+     align-items: center; 
 }
 
+.acc_btn_edit, .acc_btn_delete{
+     height: 50px;
+     margin-left: 10px;
+     padding: 10px;
+     background-color: #111722 !important;
+     outline: none !important;
+     border-radius: 5px;
+     color: white;
+     font-size: 16px;
+     border: none !important;
+     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+     font-weight: 600;
+}
 
-
-
-
-
-
-
+.acc_btn_edit:hover{
+     background-color: #238636 !important;
+     cursor: pointer;
+     
+}
+.acc_btn_delete:hover{
+     background-color: crimson !important;
+     cursor: pointer;
+     
+}
 
 .footer{
      height: fit-content;

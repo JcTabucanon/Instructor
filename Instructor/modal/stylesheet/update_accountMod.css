@@ -1,0 +1,171 @@
+/* The Modal (background) */
+.updateModal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+   font-weight: 600;
+}
+ 
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+border-radius: 7px;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: 1px solid #888;
+height: auto;
+width: 60%; /* Could be more or less, depending on screen size */
+}
+.modal-content-wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-update-can{
+  padding: 5px;
+  min-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.update-can{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.fname, .lname,
+.bday , .gender-update-can{
+  height: 50px;
+  width: 32%;
+  margin: 0 .5% 0 .5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gender-update-can{
+  border: 1px solid black;
+  height: 30px;
+  padding: 5px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+}
+
+.fname input, .lname input,
+.bday  input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+  outline: none !important;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 17px;
+  text-align: center;
+}
+.mi{
+  height: 50px;
+  width: 10%;
+  margin: 0 .5% 0 .5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mi input{
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+  outline: none !important;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 17px;
+  text-align: center;
+}
+.c{
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 .5% 0 .5%;
+  display: flex;
+  align-items: center;
+  
+}
+.email,
+.password,
+.c-password{
+  width: 75.5%;
+  height: 30px;
+  border-radius: 7px;
+  border: 1px solid black;
+  outline: none !important;
+  border-radius: 7px;
+  padding: 5px;
+  font-size: 17px;
+  text-align: center;
+  
+}
+.male, .female{
+  width: 30%;
+  color: rgb(14, 12, 12);
+  margin: 5px;
+  font-family: roboto;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  }
+  .male label,
+  .female label{
+    margin-left: 5px;
+  }
+.update-can input:hover,
+.update-can input:focus{
+  border-color: goldenrod;
+}
+.btn_update{
+  height: 40px;
+  width: 250px;
+  background-color: #fefefe;
+  outline: none !important;
+  color: goldenrod;
+  font-size: 17px;
+  border-radius: 7px;
+  margin: 5px;
+  border: 1px solid goldenrod;
+}
+.btn_update:hover,
+.btn_update:focus
+{
+  transition: 0.03s ease-in-out;
+  cursor: pointer;
+  background-color: goldenrod;
+  color: #fefefe;
+}
+/* The Close Button */
+.close_modal_edit {
+color: #888;
+float: right;
+font-size: 30px;
+font-weight: bold;
+transition: 5s ease-in-out;
+margin-right: 5px;
+}
+
+.close_modal_edit:hover,
+.close_modal_edit:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 

@@ -1,0 +1,74 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+body{
+     width: 100%;
+     min-height: 100vh;
+     background-color: #111827;
+}
+.cl-can{
+     /* margin-top: 80px; */
+     border: 1px solid transparent;
+     width: 100%;
+     height: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.cl-wrap{
+     width: 80%;
+     height: 70vh;
+     margin-top: 80px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+h1{
+     margin: 10px;
+}
+form{
+     border: 0.01rem solid #cecece;
+     padding: 8px;
+     border-radius: 4px;
+}
+.notif-create-con{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100%;
+     height: auto;
+}
+.notif-create{
+     margin: 20px;
+     margin-top: 80px;
+     color: transparent;
+     padding: 10px;
+     width: 60%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #cecece;
+     border-radius: 10px;
+}
+span label{
+     color: green;
+     padding: 5px;
+     margin: 5px;
+     border: 1px solid green;
+     font-size: 15px;
+     width: 100%;
+}
+span p{
+     color: crimson;
+     padding: 5px;
+     margin: 5px;
+     border: 1px solid crimson;
+     font-size: 15px;
+     width: 100%;
+}

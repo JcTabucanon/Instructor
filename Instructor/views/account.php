@@ -28,6 +28,8 @@
      <link rel="stylesheet" href="../stylesheet/acc.css">
      <link rel="stylesheet" href="../modal/stylesheet/update_accountMod.css">
      <link rel="stylesheet" href="../modal/stylesheet/delete_accountModal.css">
+     <link rel="stylesheet" href="../stylesheet/nav.css">
+     <link rel="stylesheet" href="../stylesheet/footer.css">
      <title>Account</title>
 </head>
 <body>

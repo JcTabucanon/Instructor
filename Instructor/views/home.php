@@ -8,8 +8,11 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="../stylesheet/homepage.css">
+     <link rel="stylesheet" href="../stylesheet/nav.css">
+     <link rel="stylesheet" href="../stylesheet/footer.css">
      <title>Home</title>
 </head>
+<body>
      <?php 
           include_once '../templates/nav.php';      
      ?>

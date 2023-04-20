@@ -5,7 +5,7 @@ session_start();
 $totalUnits = 0;
 $semester = '';
 // Check if form is submitted
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit-manual'])) {
     // Get user input
     $course = $_POST['course'];
     $ylevel = $_POST['level'];
@@ -15,16 +15,15 @@ if (isset($_POST['submit'])) {
     $instructorName = $_POST['ins_name'];
     $lec = $_POST['lec'];
     $lab = $_POST['lab'];
-    if(!empty($lec) && !empty($lab)){
+    $sy = $_POST['sy'];
+    $adviser_id = $_SESSION['current_id'];
+    $program_adviser = $_SESSION['current_user'];
+    if(!empty($_POST['lec']) && !empty($_POST['lab'])){
         $totalUnits = $lec + $lab;
     }
-    $sy = $_POST['sy'];
     if(!empty($_POST['semester'])){
         $semester = $_POST['semester'];
     }
-    $adviser_id = $_SESSION['current_id'];
-    $program_adviser = $_SESSION['current_user'];
-
     // Query to insert curriculum data
     $query = "INSERT INTO `curriculum`(`COURSE`, `YLEVEL`, `COURSE_CODE`, `DESCRIPTIVE_TITLE`, `INSTRUCTOR_ID`, `INSTRUCTOR_NAME`, `LEC`, `LAB`, `TOTAL_UNITS`, `SY`, `SEMESTER`, `ADVISER_ID`, `PROGRAM_ADVISER`) VALUES ('$course','$ylevel','$courseCode','$descTitle','$instructorId','$instructorName','$lec','$lab','$totalUnits','$sy','$semester','$adviser_id','$program_adviser')";
 
@@ -40,6 +39,7 @@ if (isset($_POST['submit'])) {
                 successAlert.style.display = 'none';
             }, 3000); // Hide the alert after 3 seconds
         </script>";
+        
     } else {
         // Display failure message using custom alert
         echo "<script>
@@ -52,5 +52,6 @@ if (isset($_POST['submit'])) {
             }, 3000); // Hide the alert after 3 seconds
         </script>";
     }
+    // mysqli_close($conn);
     // Close database connection
 }

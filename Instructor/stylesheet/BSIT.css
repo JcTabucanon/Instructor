@@ -1,45 +1,100 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 *, a{
      text-decoration: none;
    }
-   body{
-     font-family:"arial";
-     text-align: center;
-     background-color: white;
-   }
-   .container{
-     border: 3px solid black;
-     margin-top: 50px;
-     padding-top: 20px;
-     padding-left: 20px;
-     padding-right: 20px;
-     padding-bottom: 30px;
-     background-color: white;
-     border-radius: 20px;
-   }
-   thead{
-     background-color: green;
-     color: white;
-   }
-   .clm{
-     background-color: darkcyan;
-   }
-   th, td{
-     border: 1px solid black;
-   }
-   th{
-     text-align: center;
-   }
-   #btn{
-     margin-top: 10px;
-     margin-bottom: 10px;
-     text-align: left;
-   }
-   #b1{
-     margin-right: 5px;
-   }
-   #b2{
-     margin-left: 5px;
-   }
-   #btn, a{
-     text-decoration: none;
-   }
+body{
+  width: 100%;
+  min-height: 90vh;
+  background-color: #111827;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+.container{
+  border: 0.01rem solid #1f2937;
+  margin-top: 80px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  background-color: #111722;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+.c-con{
+  width: 100%;
+  background-color: #111722;
+  padding: 10px;
+
+}
+.btn-container{
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  align-items: center;
+}
+.btn-container > span {
+  font-size: 35px;
+  color: cadetblue;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+.btn-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  width: 100%;
+}
+#b1{
+  margin-right: 5px;
+}
+#b2{
+  margin-left: 5px;
+}
+.btn-con, a{
+  text-decoration: none;
+}  
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+th{
+  text-align: center;
+  color: goldenrod;
+  background-color: #1f2937;
+  border: 1.1px solid #1f2937 !important;
+  letter-spacing: .5px;
+}
+td{
+  text-align: center;
+  color:cadetblue;
+  border: none !important;
+  background-color: #111722;
+  border: 1.1px solid #1f2937 !important;
+}   
+.action-con{
+  display: flex;
+  flex-direction: row;
+}
+.btn-con button{
+  width: 75px;
+  height: 30px;
+  margin: 5px;
+  border: none !important;
+  font-size: 14px !important;
+  padding: 0;
+}
+.center span{
+  color: cadetblue;
+  vertical-align: middle;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}

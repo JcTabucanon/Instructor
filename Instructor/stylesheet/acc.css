@@ -210,33 +210,4 @@ body{
      background-color: crimson !important;
      cursor: pointer;
      
-}
-
-.footer{
-     height: fit-content;
-     width: 100%;
-     background-color: #f9faf9;
-     color: #9c9d9c;
-     background-color: #111827;
-     display: flex;
-     flex-direction: column;
-}
-.upper{
-     border-top: 0.01em solid #1f2937;
-
-     height: 50px;
-     width: 100%;
-     color:#9c9d9c;
-     display: flex;
-     justify-content: center;
-     align-items: center;
 }  
-.lower{
-     height: 50px;
-     width: 100%;
-     color:#9c9d9c;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 12px;
-}    

@@ -8,20 +8,21 @@
      <link rel="stylesheet" href="../modal/stylesheet/addInstructor_modal.css">
      <link rel="stylesheet" href="../stylesheet/addInstructor.css">
      <link rel="stylesheet" href="../stylesheet/alert.css">
+     <link rel="stylesheet" href="../stylesheet/nav.css">
+     <link rel="stylesheet" href="../stylesheet/footer.css">
      <title>Create Curriculum</title>
 </head>
 <body>
     <?php 
         include_once '../templates/nav.php';
         include_once '../include/addCurrilum.inc.php';
-        include_once '../modal/addInstructor_modal.php';
     ?>
     <div class= "import">
         <div class = "move">
             <div class = "imp-con line">
                 <!-- import data  -->
                 <h1>Import Data from Excel</h1>
-                <form action="../include/impCurriculum.inc.php" method="POST" enctype="multipart/form-data">
+                <form action="../views/impCurriculom.php" method="POST" enctype="multipart/form-data">
                     <label for="excel">Select Excel File :  </label>
                     <input type="file" name="excel" id="excel" class="imp-excel">
                     <input type="submit" name="submit" value="Import" class="imp-btn">
@@ -31,7 +32,6 @@
 
             <!-- select instructor -->
             <div class="select-instructor-con">
-
                 <?php 
                     $insname = "";
                     if(!empty($_GET['selected'])){
@@ -54,8 +54,12 @@
 
                 <label for="instructor_name">Instructor</label>     
                 <div class="select-instructor">
-                    <input disabled placeholder="Select a Instructor" type="text" class="txt-select-ins" value="<?php echo$insname?>" name="instructor_name" id="instructor_name">
-                    <button id="open_modal" class="open_modal">Select</button>
+                    <div class="select-instructor-1">
+                        <input disabled placeholder="Select a Instructor" type="text" class="txt-select-ins" value="<?php echo$insname?>" name="instructor_name" id="instructor_name">
+                        <button id="open_modal" class="open_modal">Select</button>
+                        <?php include_once '../modal/addInstructor_modal.php';?>
+                    </div>
+                    <p class="select-instructor-note">Impotant Note : Please ensure that you have selected an instructor before proceeding to fill up the form below.</p>
                 </div>
             </div>
 
@@ -89,7 +93,7 @@
                             <label for="semester">2nd</label>
                             <input type="radio" name="semester" id="semester" value="2nd" required>
                         </div>
-                        <input type="submit" name="submit" value="Submit" id="imp-btn-manual">
+                        <input type="submit" name="submit-manual" value="Submit" id="imp-btn-manual">
                     </div>
 
                 </form>

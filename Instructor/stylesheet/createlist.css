@@ -4,12 +4,10 @@
 }
 body{
      width: 100%;
-     min-height: 100vh;
+     min-height: 100%;
      background-color: #111827;
 }
 .cl-can{
-     /* margin-top: 80px; */
-     border: 1px solid transparent;
      width: 100%;
      height: auto;
      display: flex;
@@ -62,7 +60,7 @@ span label{
      margin: 5px;
      border: 1px solid green;
      font-size: 15px;
-     width: 100%;
+     width: 550px;
 }
 span p{
      color: crimson;
@@ -70,5 +68,5 @@ span p{
      margin: 5px;
      border: 1px solid crimson;
      font-size: 15px;
-     width: 100%;
+     width: 550px;
 }
